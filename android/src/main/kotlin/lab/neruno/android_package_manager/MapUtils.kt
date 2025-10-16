@@ -82,7 +82,7 @@ fun ApplicationInfo.toMap(): Map<String, Any?> {
                 baseMap += mapOf(
                     "category" to category,
                     "splitNames" to splitNames?.toList(),
-                    "storageUuid" to storageUuid.toString()
+                    "storageUuid" to storageUuid?.toString()
                 )
 
                 if (isAtLeastAndroid27()) {
